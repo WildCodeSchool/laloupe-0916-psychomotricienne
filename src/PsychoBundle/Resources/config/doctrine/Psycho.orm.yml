@@ -1,0 +1,91 @@
+PsychoBundle\Entity\Psycho:
+    type: entity
+    table: null
+    repositoryClass: PsychoBundle\Repository\PsychoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tel:
+            type: string
+            length: 14
+        titledef:
+            type: string
+            length: 255
+        txtdef:
+            type: text
+        titleWho:
+            type: string
+            length: 255
+        txtWho:
+            type: text
+        titleWhy:
+            type: string
+            length: 255
+        txtWhy:
+            type: text
+        titlePsy:
+            type: string
+            length: 255
+        txtPsy1:
+            type: text
+        txtPsy2:
+            type: text
+        titleConsult:
+            type: string
+            length: 255
+        txtConsult:
+            type: text
+        titleInterv:
+            type: string
+            length: 255
+        txtInterv:
+            type: text
+        titleBilan:
+            type: string
+            length: 255
+        txtBilan:
+            type: text
+        namePsy1:
+            type: string
+            length: 255
+        namePsy2:
+            type: string
+            length: 255
+        contactAddress:
+            type: string
+            length: 255
+        contactTel:
+            type: string
+            length: 255
+        contactName:
+            type: string
+            length: 255
+        image1:
+            type: string
+            length: 25
+        image2:
+            type: string
+            length: 25
+        image3:
+            type: string
+            length: 25
+        image4:
+            type: string
+            length: 25
+        image5:
+            type: string
+            length: 25
+        image6:
+            type: string
+            length: 25
+
+    lifecycleCallbacks:
+      prePersist: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
+      preUpdate: [ preUpload, preUpload1, preUpload2, preUpload3, preUpload4, preUpload5, preUpload6 ]
+      postPersist: [ upload, upload1, upload2,upload3, upload4, upload5, upload6 ]
+      postUpdate: [ upload, upload1, upload2,upload3, upload4,upload5, upload6 ]
+      postRemove: [ removeUpload, removeUpload1, removeUpload2,removeUpload3, removeUpload4,removeUpload5, removeUpload6 ]

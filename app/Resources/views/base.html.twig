@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Psychomotriciennes_Le_Mans{% endblock %}</title>
+    {% block stylesheets %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/psycho/css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% endblock %}
+</head>
+
+<body data-spy="scroll">
+    <div class="container-fluid">
+        {% block body %}{% endblock %}
+
+
+<!--Début footer-->
+
+        <footer>
+            <p>
+                <a data-toggle="modal" data-target="#mentionsLeg" class="ml">Mentions Légales</a> -
+                <a data-toggle="modal" data-target="#eleves" class="ml">Site créé par les élèves de la Wild Code School</a>
+            </p>
+            <div id="mentionsLeg" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mentions Légales</h4>
+                        </div>
+                        <div class="modal-body1">
+                            <p>Propriétaire du site : PSYCHOMOTRICIENNES DU MANS<br/>
+                            Contact mail : mcharrier.psychomot@gmail.com - aflorentin.psychomot@gmail.com<br/>
+                            Contact téléphonique : 06 66 19 04 04<br/>
+                            Directeur de publication : Margaux CHARRIER et Adeline FLORENTIN<br/>
+                            Responsable de rédaction : Margaux CHARRIER et Adeline FLORENTIN<br/>
+                            </p>
+                            <p>Droits d'auteur-Copyright-Marques<br/>
+                            Le contenu et la présentation du site constituent une œuvre de l'esprit et bénéficient de la protection accordée par la législation française et internationale en vigueur sur la propriété intellectuelle et industrielle. L'exploitation, la reproduction, l'extraction de tout ou partie des données, fichiers, représentations graphiques, photographiques, numériques ou audiovisuelles ou de tout élément figurant sur le site ou encore de tout ou partie du site lui-même sont formellement interdites sans l'accord écrit et préalable du FSPP. Les marques éventuellement citées sur le site sont la propriété de leurs titulaires respectifs. Collecte des données personnelles Les informations recueillies sur le formulaire de contact sont nécessaires pour traiter votre demande d'informations ou pour votre adhésion. Elles font l’objet d’un traitement informatique et sont destinées au secrétariat de l’association. En application des articles 39 et suivants de la loi du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent. Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez vous adresser au FSPP. Décharge de responsabilité : le contenu de ce site web est amené à évoluer régulièrement. Nous déclinons toute responsabilité concernant l'exactitude, l'exhaustivité et la qualité des informations offertes. Nous déclinons toute responsabilité pour d'éventuels dommages, directs ou indirects émanant de l'utilisation des informations contenues sur le site, dans la mesure où ils ne seront pas provoqués avec préméditation ou par négligence. Ce site propose des liens vers d'autres sites web. Aucun contenu illicite n'a été identifié sur les sites liés lors de la mise en ligne des liens hypertextes. N'ayant aucun moyen d'intervention sur ces sites, nous déclinons toute responsabilité concernant leur contenu. Chaque propriétaire de site est responsable du contenu de son propre site. Les clauses d'exclusion de responsabilité font partie intégrante du présent site web. Le site et l'ensemble de son contenu sont soumis au droit français et tout litige éventuel s'y rapportant sera soumis à la compétence des tribunaux français.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="eleves" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <img src="{{ asset('bundles/psycho/img/logoWCS.jpg') }}" alt="Logo Wild Code School" class="wcs" >
+                        </div>
+                        <div class="modal-body">
+                            <p class="alert alert-info">Site créé par les élèves de la Wild Code School</p>
+                            <p>Ludovic QUOUILLAULT - <a href="https://www.linkedin.com/in/ludovic-quouillault-787914125?authType=NAME_SEARCH&authToken=GvDH&locale=fr_FR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A518843479%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1475741721460%2Ctas%3Alu" class="lienLink">Lien Linkedin</a></p>
+                            <p>Florian GALERNE - <a href="https://www.linkedin.com/in/florian-galerne-610525114?authType=NAME_SEARCH&authToken=inXW&locale=fr_FR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A479052588%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1475741876604%2Ctas%3AFlori" class="lienLink">Lien Linkedin</a></p>
+                            <p>Sylvie RETAT - <a href="https://fr.linkedin.com/in/sylvie-rétat-66724bb0" class="lienLink">Lien Linkedin</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!--Fin footer-->
+
+
+
+
+    {% block javascripts %}{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/fafce886a9.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 1000; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+</script>
+
+</body>
+
+</html>
